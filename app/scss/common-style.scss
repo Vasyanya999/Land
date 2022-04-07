@@ -1,0 +1,26 @@
+@include font("metropolis-regular", "metropolis.regular", "400", "normal");
+@include font("metropolis-medium", "metropolis.medium", "500", "normal");
+@include font("metropolis-semi-bold", "metropolis.semi-bold", "600", "normal");
+@include font("metropolis-bold", "metropolis.bold", "700", "normal");
+@include font("metropolis-extra-bold", "metropolis.extra-bold", "800", "normal");
+
+$metropolisReg: "metropolis-regular";
+$metropolisMed: "metropolis-medium";
+$metropolisSemiBold: "metropolis-semi-bold";
+$metropolisBold: "metropolis-bold";
+$metropolisExBold: "metropolis-extra-bold";
+
+body {
+  font-family: $metropolisMed, sans-serif;
+}
+body._lock {
+  overflow: hidden;
+}
+.wrapper {
+  width: 100%;
+}
+.container {
+  max-width: 1100px;
+  padding: 0 10px 0 10px;
+  margin: 0 auto;
+}
