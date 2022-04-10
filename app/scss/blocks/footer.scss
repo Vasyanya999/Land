@@ -1,0 +1,152 @@
+.section__footer {
+  padding: 80px 0;
+  background: #232427;
+}
+
+.footer {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 96px;
+    max-width: 347px;
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #d6d5df;
+  }
+
+  &__subject {
+    font-family: $metropolisSemiBold;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    margin-top: 38px;
+  }
+
+  &__form {
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    position: relative;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 20px 60px 20px 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    &:focus {
+      border: 1px solid #2962ef;
+    }
+  }
+
+  &__btn {
+    transition: 0.3s all ease;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background: #2962ef;
+    border-radius: 4px;
+    &:hover {
+      background: #1348ce;
+    }
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 34px;
+    max-width: 344px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__social-item {
+  }
+
+  &__link {
+    width: 50px;
+    height: 50px;
+    background: #5e5c6c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    path {
+      transition: 0.3s all ease;
+    }
+    &:hover {
+      .footer__icon {
+        &-youtube {
+          fill: #cd201f;
+        }
+        &-twitter {
+          fill: #49cbfe;
+        }
+        &-linkedin {
+          fill: #0077b5;
+        }
+        &-discord {
+          fill: #7289d9;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .section__footer {
+    padding: 40px 0;
+  }
+
+  .footer {
+    &__row {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      row-gap: 70px;
+    }
+    &__column {
+      flex: 0 1 80%;
+    }
+    &__info {
+      max-width: 100%;
+    }
+    &__text {
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+    &__social {
+      gap: 15px;
+    }
+  }
+}

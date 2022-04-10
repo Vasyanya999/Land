@@ -24,3 +24,13 @@ body._lock {
   padding: 0 10px 0 10px;
   margin: 0 auto;
 }
+.logo {
+  width: 50px;
+
+  background: transparent;
+  &__link {
+  }
+  &__img {
+    width: 100%;
+  }
+}
